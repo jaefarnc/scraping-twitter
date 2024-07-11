@@ -37,7 +37,7 @@ check_and_restart() {
 
 # Schedule the function to run every hour
 while true; do
-    THOME/.local/bin/nitc-fwd login
+    $THOME/.local/bin/nitc-fwd login
     check_and_restart
     sleep 3600  # Sleep for 1 hour
 done

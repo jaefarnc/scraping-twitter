@@ -8,7 +8,7 @@
     - sudo systemctl daemon-reload
     - sudo systemctl restart getty@tty1
 ## Run RSHELL on startup
-    - sudo nano /etc/systemd/systemd/rshellscript.sh
+    - sudo nano /etc/systemd/system/rshellscript.sh
         --[Unit]
         --Description=Run script at startup
         --After=network.target

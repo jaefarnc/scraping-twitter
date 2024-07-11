@@ -1,5 +1,7 @@
 #!/bin/bash
 
+THOME = /home/student
+#THOME = /root
 # Set the working directory
 WORKING_DIR="/home/student/Downloads/B220032CS/tor-expert-bundle/tor"
 
@@ -35,6 +37,7 @@ check_and_restart() {
 
 # Schedule the function to run every hour
 while true; do
+    THOME/.local/bin/nitc-fwd login
     check_and_restart
     sleep 3600  # Sleep for 1 hour
 done

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-THOME = /home/student
+THOME = "/home/student"
 #THOME = /root
 # Set the working directory
 WORKING_DIR="/home/student/Downloads/B220032CS/tor-expert-bundle/tor"

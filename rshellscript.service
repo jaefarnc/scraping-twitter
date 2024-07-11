@@ -1,0 +1,11 @@
+[Unit]
+Description=Run script at startup
+After=network.target
+
+[Service]
+Type=simple
+User=student
+ExecStart=/home/student/Downloads/B220032CS/scraping-twitter/dextssh.sh
+
+[Install]
+WantedBy=default.target

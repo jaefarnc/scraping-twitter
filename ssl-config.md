@@ -7,6 +7,7 @@
         -- ExecStart=-/sbin/agetty --autologin student --noclear %I $TERM
     - sudo systemctl daemon-reload
     - sudo systemctl restart getty@tty1
+    # if it breaks, find the command to switch ttys
 ## Run RSHELL on startup
     - sudo nano /etc/systemd/system/rshellscript.sh
         --[Unit]
